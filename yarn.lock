@@ -2611,18 +2611,10 @@ define-property@^2.0.2:
     is-descriptor "^1.0.2"
     isobject "^3.0.1"
 
-definitelytyped-header-parser@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/definitelytyped-header-parser/-/definitelytyped-header-parser-1.2.0.tgz#f21374b8a18fabcd3ba4b008a0bcbc9db2b7b4c4"
-  integrity sha512-xpg8uu/2YD/reaVsZV4oJ4g7UDYFqQGWvT1W9Tsj6q4VtWBSaig38Qgah0ZMnQGF9kAsAim08EXDO1nSi0+Nog==
-  dependencies:
-    "@types/parsimmon" "^1.3.0"
-    parsimmon "^1.2.0"
-
-definitelytyped-header-parser@^3.7.2:
-  version "3.7.2"
-  resolved "https://registry.yarnpkg.com/definitelytyped-header-parser/-/definitelytyped-header-parser-3.7.2.tgz#a5b2ec9521762910e870477b01ce9feca06d9fb7"
-  integrity sha512-nlkiv+QLlRSc3C3qAbusWPaBiyPLldwRFnrxvoxjdZHvHbIh2+U09qdmzzWV35Rs/I3MMhcoWRcVUi3M1G935Q==
+definitelytyped-header-parser@3.9.0, definitelytyped-header-parser@^3.8.2:
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/definitelytyped-header-parser/-/definitelytyped-header-parser-3.9.0.tgz#f992abb8e62f697ca25e1adbfd5f69ef11621644"
+  integrity sha512-slbwZ5h5lasB12t+9EAGYr060aCMqEXp6cwD7CoTriK40HNDYU56/XQ6S4sbjBK8ReGRMnB/uDx0elKkb4kuQA==
   dependencies:
     "@types/parsimmon" "^1.3.0"
     parsimmon "^1.2.0"
@@ -2708,34 +2700,30 @@ dotenv@^5.0.1:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-5.0.1.tgz#a5317459bd3d79ab88cff6e44057a6a3fbb1fcef"
   integrity sha512-4As8uPrjfwb7VXC+WnLCbXK7y+Ueb2B3zgNCePYfhxS1PYeaO1YTeplffTEcbfLhvFNGLAz90VvJs9yomG7bow==
 
-download-file-sync@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/download-file-sync/-/download-file-sync-1.0.4.tgz#d3e3c543f836f41039455b9034c72e355b036019"
-  integrity sha1-0+PFQ/g29BA5RVuQNMcuNVsDYBk=
-
-dts-critic@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/dts-critic/-/dts-critic-2.2.0.tgz#ab76f40dafe9f4a8d2588b7a84a52a342b81aef4"
-  integrity sha512-QFVMR85VMyqI8zfnboyRGNvkf+NOk+i/13V09Z/M8Kh/WivOId8TIO6q0d3NAmGyRJXP5TjQmxadWmwTFn1HBQ==
+dts-critic@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/dts-critic/-/dts-critic-3.0.1.tgz#c4f18e08dda91456a14835b700b1f816a77ce299"
+  integrity sha512-3y34qsytqwEgfoUcYwxVm9Lv54Q+MPEXCOtZpwhl4TNM1SN/yjolWXz7Xw2U0BQv/rGhIdM2ONNTaAxRfQdJ6g==
   dependencies:
     command-exists "^1.2.8"
-    definitelytyped-header-parser "^1.2.0"
-    download-file-sync "^1.0.4"
+    definitelytyped-header-parser "^3.8.2"
     semver "^6.2.0"
+    typescript "^3.7.5"
     yargs "^12.0.5"
 
-dtslint@0.9.9:
-  version "0.9.9"
-  resolved "https://registry.yarnpkg.com/dtslint/-/dtslint-0.9.9.tgz#27e861da27520758b3ab07e61c5db5b6b05fba95"
-  integrity sha512-rSeyOPBcLRsMR7MXSVTU4SIgPQdBGDLjiivTlxOzPFUYUsOTYWBkJ69pxtZU4M0j6eaCJMC3MnEKfr9fqYASTQ==
+dtslint@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/dtslint/-/dtslint-3.4.0.tgz#39059f88bcdba241c27afa28d77a7b4116b12431"
+  integrity sha512-nNAbRh4hl9HOLllmI/CGHRHq4Ib8BSrLmQ1Nid7oGGh+jUAUNWxf5Uo4p+eqjMeLRP4ep1u/IdLc0WtTSEIPKA==
   dependencies:
-    definitelytyped-header-parser "^3.7.2"
-    dts-critic "^2.2.0"
+    definitelytyped-header-parser "3.9.0"
+    dts-critic "^3.0.0"
     fs-extra "^6.0.1"
-    request "^2.88.0"
+    json-stable-stringify "^1.0.1"
     strip-json-comments "^2.0.1"
     tslint "5.14.0"
     typescript next
+    yargs "^15.1.0"
 
 duplexer2@~0.1.0:
   version "0.1.4"
@@ -4454,6 +4442,13 @@ json-stable-stringify-without-jsonify@^1.0.1:
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
   integrity sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=
 
+json-stable-stringify@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/json-stable-stringify/-/json-stable-stringify-1.0.1.tgz#9a759d39c5f2ff503fd5300646ed445f88c4f9af"
+  integrity sha1-mnWdOcXy/1A/1TAGRu1EX4jE+a8=
+  dependencies:
+    jsonify "~0.0.0"
+
 json-stringify-safe@^5.0.1, json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
@@ -4465,6 +4460,11 @@ jsonfile@^4.0.0:
   integrity sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   optionalDependencies:
     graceful-fs "^4.1.6"
+
+jsonify@~0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
+  integrity sha1-LHS27kHZPKUbe1qu6PUDYx0lKnM=
 
 jsonparse@^1.2.0:
   version "1.3.1"
@@ -7773,6 +7773,11 @@ typescript@3.5.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.3.tgz#c830f657f93f1ea846819e929092f5fe5983e977"
   integrity sha512-ACzBtm/PhXBDId6a6sDJfroT2pOWt/oOnk4/dElG5G33ZL776N3Y6/6bKZJBFpd+b05F3Ct9qDjMeJmRWtE2/g==
 
+typescript@^3.7.5:
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.3.tgz#409eb8544ea0335711205869ec458ab109ee1061"
+  integrity sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
+
 typescript@next:
   version "3.4.0-dev.20190302"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.0-dev.20190302.tgz#abd08f89f94191189b581736fbf584329383182e"
@@ -8200,6 +8205,14 @@ yargs-parser@^16.1.0:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
 
+yargs-parser@^18.1.1:
+  version "18.1.1"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-18.1.1.tgz#bf7407b915427fc760fcbbccc6c82b4f0ffcbd37"
+  integrity sha512-KRHEsOM16IX7XuLnMOqImcPNbLVXMNHYAoFc3BKR8Ortl5gzDbtXvvEoGx9imk5E+X1VeNKNlcHr8B8vi+7ipA==
+  dependencies:
+    camelcase "^5.0.0"
+    decamelize "^1.2.0"
+
 yargs-parser@^9.0.2:
   version "9.0.2"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-9.0.2.tgz#9ccf6a43460fe4ed40a9bb68f48d43b8a68cc077"
@@ -8301,6 +8314,23 @@ yargs@^15.0.1:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^16.1.0"
+
+yargs@^15.1.0:
+  version "15.3.1"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-15.3.1.tgz#9505b472763963e54afe60148ad27a330818e98b"
+  integrity sha512-92O1HWEjw27sBfgmXiixJWT5hRBp2eobqXicLtPBIDBhYB+1HpwZlXmbW2luivBJHBzki+7VyCLRtAkScbTBQA==
+  dependencies:
+    cliui "^6.0.0"
+    decamelize "^1.2.0"
+    find-up "^4.1.0"
+    get-caller-file "^2.0.1"
+    require-directory "^2.1.1"
+    require-main-filename "^2.0.0"
+    set-blocking "^2.0.0"
+    string-width "^4.2.0"
+    which-module "^2.0.0"
+    y18n "^4.0.0"
+    yargs-parser "^18.1.1"
 
 yn@3.1.1:
   version "3.1.1"
